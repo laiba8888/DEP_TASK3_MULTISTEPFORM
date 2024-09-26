@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Step Form</title>
+  <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+
+  <div class="container">
+    <form id="multiStepForm">
+      <!-- Progress Bar -->
+      <div class="progress-bar">
+        <div class="step">
+          <p>Step 1</p>
+          <div class="bullet">1</div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>Step 2</p>
+          <div class="bullet">2</div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>Step 3</p>
+          <div class="bullet">3</div>
+          <div class="check fas fa-check"></div>
+        </div>
+      </div>
+
+      <!-- Step 1 -->
+      <div class="form-step">
+        <h3>Personal Information</h3>
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+        <button type="button" class="next-btn">Next</button>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="form-step">
+        <h3>Contact Information</h3>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone" required>
+        <button type="button" class="prev-btn">Previous</button>
+        <button type="button" class="next-btn">Next</button>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="form-step">
+        <h3>Account Information</h3>
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Confirm Password" required>
+        <button type="button" class="prev-btn">Previous</button>
+        <button type="submit" class="submit-btn">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="formscript.js"></script>
+</body>
+</html>
